@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildKart | Building Materials & Interior Products</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="BuildKart is India's comprehensive B2B and B2C e-commerce marketplace for building materials, construction supplies, and interior products.">
+    <meta name="keywords" content="building materials, construction supplies, interior design, tiles, sanitaryware, B2B marketplace india">
+    <meta property="og:title" content="BuildKart | Building Better. Designing Smarter. Delivered Faster.">
+    <meta property="og:description" content="Simplify the procurement of building materials and interior products with our trusted digital marketplace.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon Placeholder (SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗️</text></svg>">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#1C3B57',
+                            teal: '#109090',
+                            orange: '#F0A050',
+                            light: '#FAF9F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        /* Hide scrollbar for horizontal scrolling elements */
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Slider Transitions */
+        .slide { transition: opacity 0.6s ease-in-out; }
+        
+        /* Grid pattern background */
+        .bg-grid-pattern {
+            background-image: repeating-linear-gradient(0deg, transparent, transparent 19px, #e5e5e5 19px, #e5e5e5 20px);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white text-gray-900 font-sans selection:bg-brand-teal selection:text-white overflow-x-hidden relative">
+
+    <!-- Visually hidden H1 for SEO -->
+    <h1 class="sr-only">BuildKart - Building Materials and Interior Products E-commerce</h1>
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-navy text-white text-xs py-2 px-4 flex justify-between items-center tracking-wider">
+        <div class="hidden md:flex items-center space-x-6 w-1/3">
+            <span class="flex items-center">
+                <svg class="w-3.5 h-3.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                PAN-INDIA DELIVERY
+            </span>
+        </div>
+        <div class="w-full md:w-1/3 text-center font-medium">
+            B2B & B2C PLATFORM FOR BUILDING MATERIALS
+        </div>
+        <div class="hidden md:flex justify-end items-center space-x-6 w-1/3">
+            <span class="flex items-center">
+                <svg class="w-3.5 h-3.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                VERIFIED SUPPLIERS
+            </span>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Mobile Menu Toggle -->
+                <div class="flex md:hidden">
+                    <button id="mobile-menu-btn" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu" class="text-gray-600 hover:text-brand-teal focus:outline-none focus:ring-2 focus:ring-brand-teal rounded p-1">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <a href="/" aria-label="BuildKart Home">
+                        <svg viewBox="0 0 400 120" class="h-10 w-auto" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <!-- Left Building/Chimney -->
+                            <path d="M40 70 V30 L60 20 V60" fill="#1C3B57" />
+                            <path d="M40 70 L60 60 V100 L40 100 Z" fill="#2A4B69" />
+                            <rect x="42" y="80" width="16" height="20" fill="#1C3B57" />
+                            <rect x="42" y="82" width="6" height="6" fill="#A0B0C0" />
+                            <rect x="52" y="82" width="6" height="6" fill="#A0B0C0" />
+                            
+                            <!-- Main 'B' / House Shape -->
+                            <path d="M65 100 V15 L115 15 C135 15 145 25 145 40 C145 50 138 55 130 58 C145 60 155 70 155 85 C155 105 135 110 115 110 H65 Z" stroke="#109090" stroke-width="12" stroke-linejoin="round"/>
+                            
+                            <!-- Inner House Detail -->
+                            <path d="M75 100 V35 L105 25 L135 45" stroke="#F0A050" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M105 25 V45" stroke="#1C3B57" stroke-width="2"/>
+                            <circle cx="105" cy="50" r="4" fill="#F0A050"/>
+                            
+                            <!-- Little Chair/Plant abstract representation -->
+                            <path d="M85 85 H105 V95 H85 Z" fill="#F0A050" rx="2" />
+                            <path d="M80 75 Q85 80 85 85 H105 Q105 80 110 75" stroke="#1C3B57" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="120" cy="80" r="6" fill="#109090"/>
+                            <path d="M120 85 V95" stroke="#1C3B57" stroke-width="2"/>
+                        
+                            <!-- Text -->
+                            <text x="170" y="55" font-family="sans-serif" font-weight="800" font-size="48" fill="#1C3B57">Build</text>
+                            <text x="170" y="98" font-family="sans-serif" font-weight="800" font-size="48" fill="#109090">Kart</text>
+                            <circle cx="280" cy="70" r="5" fill="#F0A050"/>
+                            <line x1="170" y1="108" x2="350" y2="108" stroke="#1C3B57" stroke-width="1.5"/>
+                            <text x="170" y="118" font-family="sans-serif" font-weight="600" font-size="8" fill="#1C3B57" letter-spacing="1">BUILDING MATERIALS & INTERIOR PRODUCTS</text>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 lg:space-x-12" aria-label="Main Navigation">
+                    <a href="#materials" class="text-xs uppercase tracking-[0.15em] font-semibold text-gray-700 hover:text-brand-teal transition-colors duration-200">Building Materials</a>
+                    <a href="#interiors" class="text-xs uppercase tracking-[0.15em] font-semibold text-gray-700 hover:text-brand-teal transition-colors duration-200">Interiors</a>
+                    <a href="#professionals" class="text-xs uppercase tracking-[0.15em] font-semibold text-gray-700 hover:text-brand-teal transition-colors duration-200">Professionals</a>
+                    <a href="#how-it-works" class="text-xs uppercase tracking-[0.15em] font-semibold text-gray-700 hover:text-brand-teal transition-colors duration-200">How It Works</a>
+                </nav>
+
+                <!-- Right Icons -->
+                <div class="flex items-center space-x-4 sm:space-x-6">
+                    <button aria-label="Search" class="text-gray-600 hover:text-brand-teal hidden sm:block focus:outline-none">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </button>
+                    <button aria-label="User Account" class="text-gray-600 hover:text-brand-teal hidden sm:block focus:outline-none">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    </button>
+                    <button id="cart-btn" aria-label="Shopping Cart" class="text-gray-600 hover:text-brand-teal relative focus:outline-none" title="Click to demo adding an item">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        <span id="cart-count" class="absolute -top-1.5 -right-1.5 bg-brand-teal text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold transition-transform duration-300">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-40" aria-modal="true" role="dialog">
+            <div id="mobile-backdrop" class="fixed inset-0 bg-black/20 backdrop-blur-sm cursor-pointer" aria-hidden="true"></div>
+            <div class="absolute top-20 left-0 w-full bg-white border-t border-gray-100 shadow-lg transform transition-transform origin-top">
+                <nav class="px-4 pt-2 pb-6 space-y-1" aria-label="Mobile Navigation">
+                    <a href="#materials" class="mobile-link block px-3 py-3 text-sm uppercase tracking-wider font-medium text-gray-700 border-b border-gray-50 hover:text-brand-teal hover:bg-gray-50">Building Materials</a>
+                    <a href="#interiors" class="mobile-link block px-3 py-3 text-sm uppercase tracking-wider font-medium text-gray-700 border-b border-gray-50 hover:text-brand-teal hover:bg-gray-50">Interiors</a>
+                    <a href="#professionals" class="mobile-link block px-3 py-3 text-sm uppercase tracking-wider font-medium text-gray-700 border-b border-gray-50 hover:text-brand-teal hover:bg-gray-50">Professionals</a>
+                    <a href="#how-it-works" class="mobile-link block px-3 py-3 text-sm uppercase tracking-wider font-medium text-gray-700 border-b border-gray-50 hover:text-brand-teal hover:bg-gray-50">How It Works</a>
+                    <a href="#account" class="mobile-link block px-3 py-3 text-sm uppercase tracking-wider font-medium text-gray-700 border-b border-gray-50 hover:text-brand-teal hover:bg-gray-50">My Account</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Slider) -->
+        <section aria-label="Featured Collections" class="relative w-full h-[60vh] md:h-[75vh] bg-gray-50 flex items-center justify-center overflow-hidden group">
+            
+            <div id="slider" class="absolute inset-0 w-full h-full">
+                <!-- Slide 1 (Eager load for LCP) -->
+                <div class="slide absolute inset-0 w-full h-full opacity-100 z-10">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Modern Minimalist Interior Construction" class="w-full h-full object-cover object-center">
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide absolute inset-0 w-full h-full opacity-0 z-0">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Commercial Construction Materials" loading="lazy" class="w-full h-full object-cover object-center">
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide absolute inset-0 w-full h-full opacity-0 z-0">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Premium Interior Finishes" loading="lazy" class="w-full h-full object-cover object-center">
+                </div>
+            </div>
+            
+            <div class="absolute inset-0 bg-gradient-to-r from-white/40 to-transparent z-20 pointer-events-none"></div>
+            
+            <!-- Slider Controls -->
+            <button id="prev-slide" aria-label="Previous slide" class="absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 text-white/70 hover:text-white z-30 focus:outline-none focus:ring-2 focus:ring-white rounded-full transition-opacity opacity-0 group-hover:opacity-100">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <button id="next-slide" aria-label="Next slide" class="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 text-white/70 hover:text-white z-30 focus:outline-none focus:ring-2 focus:ring-white rounded-full transition-opacity opacity-0 group-hover:opacity-100">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+            
+            <!-- Slider Dots -->
+            <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-30" id="slider-dots" role="tablist">
+                <button role="tab" aria-selected="true" aria-label="Slide 1" data-index="0" class="dot w-2.5 h-2.5 rounded-full bg-gray-800 transition-colors focus:outline-none"></button>
+                <button role="tab" aria-selected="false" aria-label="Slide 2" data-index="1" class="dot w-2.5 h-2.5 rounded-full border border-gray-400 bg-transparent transition-colors focus:outline-none"></button>
+                <button role="tab" aria-selected="false" aria-label="Slide 3" data-index="2" class="dot w-2.5 h-2.5 rounded-full border border-gray-400 bg-transparent transition-colors focus:outline-none"></button>
+            </div>
+        </section>
+
+        <!-- Value Propositions -->
+        <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <h2 class="sr-only">Our Value Propositions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                
+                <div class="text-center pt-8 md:pt-0 px-4">
+                    <h3 class="text-xs uppercase tracking-[0.2em] font-bold text-brand-navy mb-4">Pan-India<br>Delivery</h3>
+                    <div class="w-6 h-[1px] bg-gray-300 mx-auto mb-4" aria-hidden="true"></div>
+                    <p class="text-xs text-gray-500 leading-relaxed max-w-xs mx-auto">
+                        With our extensive logistics network, we ensure your construction and interior materials reach your site safely and on time, anywhere in India.
+                    </p>
+                </div>
+
+                <div class="text-center pt-8 md:pt-0 px-4">
+                    <h3 class="text-xs uppercase tracking-[0.2em] font-bold text-brand-navy mb-4">Verified<br>Suppliers</h3>
+                    <div class="w-6 h-[1px] bg-gray-300 mx-auto mb-4" aria-hidden="true"></div>
+                    <p class="text-xs text-gray-500 leading-relaxed max-w-xs mx-auto">
+                        We connect you directly with top manufacturers and trusted brands, ensuring genuine products, transparency, and competitive B2B/B2C pricing.
+                    </p>
+                </div>
+
+                <div class="text-center pt-8 md:pt-0 px-4">
+                    <h3 class="text-xs uppercase tracking-[0.2em] font-bold text-brand-navy mb-4">Complete<br>Solutions</h3>
+                    <div class="w-6 h-[1px] bg-gray-300 mx-auto mb-4" aria-hidden="true"></div>
+                    <p class="text-xs text-gray-500 leading-relaxed max-w-xs mx-auto">
+                        From foundational cement and steel to premium tiles, lighting, and modular kitchens. Source everything for your project in one place.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Category Grid Section -->
+        <section id="materials" class="pb-20 pt-8 max-w-[1400px] mx-auto px-4 md:px-8">
+            
+            <div class="text-center mb-10">
+                <h2 class="text-sm uppercase tracking-[0.25em] font-bold text-brand-navy mb-6">Shop Our Range</h2>
+                <nav aria-label="Category Filter" class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[10px] md:text-xs font-semibold tracking-widest text-gray-500 uppercase">
+                    <a href="#materials" class="hover:text-brand-teal text-brand-navy transition-colors">Materials</a>
+                    <span class="hidden sm:inline" aria-hidden="true">|</span>
+                    <a href="#tiles" class="hover:text-brand-teal transition-colors">Tiles & Stone</a>
+                    <span class="hidden sm:inline" aria-hidden="true">|</span>
+                    <a href="#sanitary" class="hover:text-brand-teal transition-colors">Sanitaryware</a>
+                    <span class="hidden sm:inline" aria-hidden="true">|</span>
+                    <a href="#interiors" class="hover:text-brand-teal transition-colors">Interiors</a>
+                    <span class="hidden sm:inline" aria-hidden="true">|</span>
+                    <a href="#all" class="hover:text-brand-teal transition-colors">Shop All</a>
+                </nav>
+            </div>
+
+            <!-- The 3x3 Grid mimicking the reference design -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1 md:gap-2">
+                
+                <!-- Row 1 -->
+                <a href="#" aria-label="Shop Building Materials" class="relative aspect-square group overflow-hidden bg-gray-100 block focus:outline-none focus:ring-4 focus:ring-brand-teal focus:ring-inset">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cement, Steel, and Bricks" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="bg-white/95 px-6 py-3 border border-gray-200 text-xs font-bold tracking-[0.15em] uppercase text-brand-navy group-hover:bg-brand-navy group-hover:text-white transition-colors">
+                            Shop Materials
+                        </span>
+                    </div>
+                </a>
+
+                <div class="relative aspect-square flex flex-col items-center justify-center text-center p-8 bg-brand-light bg-grid-pattern">
+                    <div class="bg-brand-light p-4">
+                        <h3 class="text-xs font-bold tracking-[0.2em] uppercase text-brand-navy leading-relaxed border-t border-b border-brand-navy py-4">
+                            Pick A<br>Category<br>To Begin<br>Your<br>Search
+                        </h3>
+                    </div>
+                </div>
+
+                <a href="#" aria-label="Shop Interiors" class="relative aspect-square group overflow-hidden bg-gray-100 block focus:outline-none focus:ring-4 focus:ring-brand-teal focus:ring-inset">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Living Room Interior" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="bg-white/95 px-6 py-3 border border-gray-200 text-xs font-bold tracking-[0.15em] uppercase text-brand-navy group-hover:bg-brand-navy group-hover:text-white transition-colors">
+                            Shop Interiors
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Row 2 -->
+                <div class="relative aspect-square flex items-center justify-center text-center p-8 bg-gray-50">
+                    <h3 class="text-xs font-bold tracking-[0.2em] uppercase text-gray-500 leading-relaxed border-t border-b border-gray-300 py-4 max-w-[200px]">
+                        Everything<br>For Your<br>Residential &<br>Commercial<br>Projects
+                    </h3>
+                </div>
+
+                <a href="#" aria-label="Shop Tiles and Stone" class="relative aspect-square group overflow-hidden bg-gray-100 block focus:outline-none focus:ring-4 focus:ring-brand-teal focus:ring-inset">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18efc2297?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ceramic and Porcelain Tiles" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="bg-white/95 px-6 py-3 border border-gray-200 text-xs font-bold tracking-[0.15em] uppercase text-brand-navy group-hover:bg-brand-navy group-hover:text-white transition-colors">
+                            Shop Tiles
+                        </span>
+                    </div>
+                </a>
+
+                <a href="#" aria-label="Shop Modular Kitchens" class="relative aspect-square group overflow-hidden bg-gray-100 block focus:outline-none focus:ring-4 focus:ring-brand-teal focus:ring-inset">
+                    <img src="https://images.unsplash.com/photo-1558882224-dda166733046?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Modular Kitchen" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="bg-white/95 px-6 py-3 border border-gray-200 text-xs font-bold tracking-[0.15em] uppercase text-brand-navy group-hover:bg-brand-navy group-hover:text-white transition-colors">
+                            Shop Kitchens
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Row 3 -->
+                <a href="#" aria-label="Shop Sanitaryware" class="relative aspect-square group overflow-hidden bg-gray-100 block focus:outline-none focus:ring-4 focus:ring-brand-teal focus:ring-inset">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Bathroom Sanitaryware" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="bg-white/95 px-6 py-3 border border-gray-200 text-xs font-bold tracking-[0.15em] uppercase text-brand-navy group-hover:bg-brand-navy group-hover:text-white transition-colors">
+                            Shop Bath
+                        </span>
+                    </div>
+                </a>
+
+                <div class="relative aspect-square flex flex-col items-center justify-center text-center p-8 bg-[#FDFBF7]">
+                     <h3 class="text-xs font-bold tracking-[0.2em] uppercase text-brand-navy leading-relaxed border-t border-b border-brand-navy py-4 max-w-[200px]">
+                        Empowering<br>Builders &<br>Designers<br>Across<br>India
+                    </h3>
+                </div>
+
+                <a href="#" aria-label="Shop Lighting Solutions" class="relative aspect-square group overflow-hidden bg-gray-100 block focus:outline-none focus:ring-4 focus:ring-brand-teal focus:ring-inset">
+                    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pendant Lighting Fixtures" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="bg-white/95 px-6 py-3 border border-gray-200 text-xs font-bold tracking-[0.15em] uppercase text-brand-navy group-hover:bg-brand-navy group-hover:text-white transition-colors">
+                            Shop Lighting
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="py-16 md:py-24 border-t border-gray-100">
+            <div class="max-w-xl mx-auto px-4 text-center">
+                <h2 class="text-xs uppercase tracking-[0.15em] font-bold text-gray-800 mb-6">Sign up to the BuildKart Newsletter</h2>
+                
+                <form id="newsletter-form" class="flex items-center justify-between border border-gray-300 p-1 focus-within:border-brand-teal transition-colors">
+                    <label for="email-input" class="sr-only">Email address</label>
+                    <input 
+                        type="email" 
+                        id="email-input"
+                        placeholder="Enter your email address" 
+                        class="w-full px-4 py-3 text-sm focus:outline-none bg-transparent placeholder-gray-400"
+                        required
+                    />
+                    <button type="submit" aria-label="Submit newsletter subscription" class="px-6 py-3 text-xs font-bold uppercase tracking-wider flex items-center text-brand-navy hover:text-brand-teal transition-colors focus:outline-none">
+                        Submit 
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </form>
+                
+                <!-- Success Message (Hidden by default) -->
+                <div id="newsletter-success" class="hidden mt-4 text-brand-teal text-sm font-semibold flex items-center justify-center" aria-live="polite">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Thank you for subscribing! We'll be in touch soon.
+                </div>
+            </div>
+        </section>
+
+        <!-- Social / Inspiration Strip -->
+        <section aria-label="Project Inspiration" class="w-full border-t border-b border-gray-100 relative group">
+            <div class="flex items-center w-full">
+                <!-- Mobile Horizontal Scroll Container -->
+                <div id="inspiration-scroll" class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar w-full scroll-smooth">
+                    
+                    <a href="#" class="aspect-square w-1/2 md:w-1/4 lg:w-1/5 flex-shrink-0 snap-center relative block focus:outline-none">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Architectural Building Design" loading="lazy" class="w-full h-full object-cover hover:opacity-80 transition-opacity">
+                    </a>
+                    
+                    <a href="#" class="aspect-square w-1/2 md:w-1/4 lg:w-1/5 flex-shrink-0 snap-center relative block focus:outline-none">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Modern Bathroom Interior" loading="lazy" class="w-full h-full object-cover hover:opacity-80 transition-opacity">
+                    </a>
+                    
+                    <a href="#" class="aspect-square w-1/2 md:w-1/4 lg:w-1/5 flex-shrink-0 snap-center relative block focus:outline-none">
+                        <img src="https://images.unsplash.com/photo-1521783593447-5702b9bfd267?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Construction Site Materials" loading="lazy" class="w-full h-full object-cover hover:opacity-80 transition-opacity">
+                    </a>
+                    
+                    <a href="#" class="aspect-square w-1/2 md:w-1/4 lg:w-1/5 flex-shrink-0 snap-center relative block focus:outline-none">
+                        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Kitchen Cabinets and Finishes" loading="lazy" class="w-full h-full object-cover hover:opacity-80 transition-opacity">
+                    </a>
+                    
+                    <a href="#" class="aspect-square w-1/2 md:w-1/4 lg:w-1/5 flex-shrink-0 snap-center relative block lg:block focus:outline-none hidden">
+                        <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Living Room Furniture" loading="lazy" class="w-full h-full object-cover hover:opacity-80 transition-opacity">
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Desktop Scroll Buttons (Optional, hidden on mobile) -->
+            <div class="hidden md:flex absolute inset-y-0 w-full justify-between items-center pointer-events-none px-2">
+                <button id="insp-prev" aria-label="Scroll Inspiration Left" class="bg-white/80 p-2 rounded-full shadow hover:bg-white transition-colors pointer-events-auto opacity-0 group-hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-brand-teal">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button id="insp-next" aria-label="Scroll Inspiration Right" class="bg-white/80 p-2 rounded-full shadow hover:bg-white transition-colors pointer-events-auto opacity-0 group-hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-brand-teal">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white pt-16 pb-8 border-t border-gray-200" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
+                
+                <div class="col-span-2 md:col-span-1 flex flex-col justify-start">
+                    <a href="/" aria-label="BuildKart Home">
+                        <!-- Duplicated SVG for Footer -->
+                        <svg viewBox="0 0 400 120" class="h-10 w-auto mb-6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M40 70 V30 L60 20 V60" fill="#1C3B57" />
+                            <path d="M40 70 L60 60 V100 L40 100 Z" fill="#2A4B69" />
+                            <rect x="42" y="80" width="16" height="20" fill="#1C3B57" />
+                            <rect x="42" y="82" width="6" height="6" fill="#A0B0C0" />
+                            <rect x="52" y="82" width="6" height="6" fill="#A0B0C0" />
+                            <path d="M65 100 V15 L115 15 C135 15 145 25 145 40 C145 50 138 55 130 58 C145 60 155 70 155 85 C155 105 135 110 115 110 H65 Z" stroke="#109090" stroke-width="12" stroke-linejoin="round"/>
+                            <path d="M75 100 V35 L105 25 L135 45" stroke="#F0A050" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M105 25 V45" stroke="#1C3B57" stroke-width="2"/>
+                            <circle cx="105" cy="50" r="4" fill="#F0A050"/>
+                            <path d="M85 85 H105 V95 H85 Z" fill="#F0A050" rx="2" />
+                            <path d="M80 75 Q85 80 85 85 H105 Q105 80 110 75" stroke="#1C3B57" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="120" cy="80" r="6" fill="#109090"/>
+                            <path d="M120 85 V95" stroke="#1C3B57" stroke-width="2"/>
+                            <text x="170" y="55" font-family="sans-serif" font-weight="800" font-size="48" fill="#1C3B57">Build</text>
+                            <text x="170" y="98" font-family="sans-serif" font-weight="800" font-size="48" fill="#109090">Kart</text>
+                            <circle cx="280" cy="70" r="5" fill="#F0A050"/>
+                            <line x1="170" y1="108" x2="350" y2="108" stroke="#1C3B57" stroke-width="1.5"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-navy mb-6">BuildKart</h3>
+                    <ul class="space-y-4 text-xs text-gray-500">
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Help & FAQs</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-navy mb-6">About</h3>
+                    <ul class="space-y-4 text-xs text-gray-500">
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Our Story</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Track My Order</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Partner With Us</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">B2B Bulk Orders</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-navy mb-6">Account</h3>
+                    <ul class="space-y-4 text-xs text-gray-500">
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Log In</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Register</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">My Wishlist</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition-colors focus:outline-none focus:underline">Project Quotes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-2 md:col-span-1 flex flex-col md:items-end">
+                    <div class="flex space-x-4 mb-8">
+                        <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-brand-navy transition-colors focus:outline-none focus:ring-2 focus:ring-brand-navy rounded p-1">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" /></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-brand-navy transition-colors focus:outline-none focus:ring-2 focus:ring-brand-navy rounded p-1">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-brand-navy transition-colors focus:outline-none focus:ring-2 focus:ring-brand-navy rounded p-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" aria-label="Email Us" class="text-gray-400 hover:text-brand-navy transition-colors focus:outline-none focus:ring-2 focus:ring-brand-navy rounded p-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                    <p class="text-[10px] text-gray-400 text-left md:text-right font-medium tracking-wide">
+                        Building Better. Designing Smarter.<br>Delivered Faster.
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-400 font-medium tracking-wide">
+                <p>&copy; <span id="current-year">2026</span> BuildKart Marketplace. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Designed for construction and interiors.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-brand-teal text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 transform translate-y-4 hover:-translate-y-1 hover:bg-brand-navy focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-teal z-40" aria-label="Back to top">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path></svg>
+    </button>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- Set Current Year ---
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // --- Mobile Menu Logic ---
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileBackdrop = document.getElementById('mobile-backdrop');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            let isMenuOpen = false;
+
+            const toggleMenu = () => {
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileBtn.setAttribute('aria-expanded', 'true');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileBtn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                }
+            };
+
+            mobileBtn.addEventListener('click', toggleMenu);
+            mobileBackdrop.addEventListener('click', toggleMenu);
+            
+            // Close menu on link click
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (isMenuOpen) toggleMenu();
+                });
+            });
+
+            // Close on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && isMenuOpen) {
+                    toggleMenu();
+                    mobileBtn.focus();
+                }
+            });
+
+            // --- Cart Increment Demo ---
+            const cartBtn = document.getElementById('cart-btn');
+            const cartCount = document.getElementById('cart-count');
+            let itemsInCart = 0;
+
+            cartBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                itemsInCart++;
+                cartCount.textContent = itemsInCart;
+                
+                // Add a small pop animation
+                cartCount.classList.add('scale-150');
+                setTimeout(() => {
+                    cartCount.classList.remove('scale-150');
+                }, 200);
+            });
+
+            // --- Hero Slider Logic ---
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            const prevBtn = document.getElementById('prev-slide');
+            const nextBtn = document.getElementById('next-slide');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            const updateSlider = (index) => {
+                // Ensure index bounds
+                if (index < 0) currentSlide = totalSlides - 1;
+                else if (index >= totalSlides) currentSlide = 0;
+                else currentSlide = index;
+
+                // Update slides visual
+                slides.forEach((slide, i) => {
+                    if (i === currentSlide) {
+                        slide.classList.replace('opacity-0', 'opacity-100');
+                        slide.classList.replace('z-0', 'z-10');
+                    } else {
+                        slide.classList.replace('opacity-100', 'opacity-0');
+                        slide.classList.replace('z-10', 'z-0');
+                    }
+                });
+
+                // Update dots visual and a11y
+                dots.forEach((dot, i) => {
+                    if (i === currentSlide) {
+                        dot.classList.replace('border-gray-400', 'bg-gray-800');
+                        dot.classList.replace('bg-transparent', 'bg-gray-800');
+                        dot.setAttribute('aria-selected', 'true');
+                    } else {
+                        dot.classList.replace('bg-gray-800', 'bg-transparent');
+                        dot.classList.add('border-gray-400');
+                        dot.setAttribute('aria-selected', 'false');
+                    }
+                });
+            };
+
+            prevBtn.addEventListener('click', () => updateSlider(currentSlide - 1));
+            nextBtn.addEventListener('click', () => updateSlider(currentSlide + 1));
+            
+            dots.forEach(dot => {
+                dot.addEventListener('click', (e) => {
+                    const index = parseInt(e.target.getAttribute('data-index'));
+                    updateSlider(index);
+                });
+            });
+
+            // --- Newsletter Form Submission ---
+            const newsletterForm = document.getElementById('newsletter-form');
+            const successMsg = document.getElementById('newsletter-success');
+
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Hide form, show success
+                newsletterForm.style.display = 'none';
+                successMsg.classList.remove('hidden');
+            });
+
+            // --- Inspiration Strip Scroll Controls ---
+            const inspScroll = document.getElementById('inspiration-scroll');
+            const inspPrev = document.getElementById('insp-prev');
+            const inspNext = document.getElementById('insp-next');
+
+            if (inspScroll && inspPrev && inspNext) {
+                inspPrev.addEventListener('click', () => {
+                    inspScroll.scrollBy({ left: -300, behavior: 'smooth' });
+                });
+                inspNext.addEventListener('click', () => {
+                    inspScroll.scrollBy({ left: 300, behavior: 'smooth' });
+                });
+            }
+
+            // --- Back to Top Button Logic ---
+            const backToTopBtn = document.getElementById('back-to-top');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+                    backToTopBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                } else {
+                    backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+                    backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+        });
+    </script>
+</body>
+</html>
